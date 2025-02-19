@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1gy2fbcu7at2"
-path="res://.godot/imported/spaceMeteors_002.png-d7a1fa89eb77f156a2e995975f082e87.ctex"
+uid="uid://dxnbqe8njsckc"
+path="res://.godot/imported/Crystal_01.png-c9c93ffbc89e5c81729398b6292adaed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://meteoros/spaceMeteors_002.png"
-dest_files=["res://.godot/imported/spaceMeteors_002.png-d7a1fa89eb77f156a2e995975f082e87.ctex"]
+source_file="res://efeitos/Crystal_01.png"
+dest_files=["res://.godot/imported/Crystal_01.png-c9c93ffbc89e5c81729398b6292adaed.ctex"]
 
 [params]
 

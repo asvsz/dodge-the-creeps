@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyfwty2q3rdse"]
+[gd_scene load_steps=11 format=3 uid="uid://cyfwty2q3rdse"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_0r6n5"]
 [ext_resource type="PackedScene" uid="uid://rkdnhqgf2hpj" path="res://mob.tscn" id="2_50pww"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ccqoreueuxdb7" path="res://hud.tscn" id="4_0qnje"]
 [ext_resource type="AudioStream" uid="uid://q2pf4fr8d0ks" path="res://art/House In a Forest Loop.ogg" id="5_55d8h"]
 [ext_resource type="AudioStream" uid="uid://dw26fpygeag8o" path="res://art/gameover.wav" id="6_hp1r0"]
+[ext_resource type="Texture2D" uid="uid://b3krlclni12fx" path="res://efeitos/Crystal_02.png" id="8_0ese5"]
 [ext_resource type="Texture2D" uid="uid://co6tsfrgycmet" path="res://backgrounds/Starbasesnow.png" id="8_jlsp6"]
 
 [sub_resource type="Curve2D" id="1"]
@@ -13,6 +14,15 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 480, 720, 0, 0, 0, 0, 0, 720, 0, 0, 0, 0, 0, 0)
 }
 point_count = 5
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bug8p"]
+particle_flag_disable_z = true
+direction = Vector3(0, 10, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.05
+scale_max = 0.05
 
 [node name="Main" type="Node"]
 script = ExtResource("1_0r6n5")
@@ -49,6 +59,15 @@ stream = ExtResource("6_hp1r0")
 position = Vector2(253, 367)
 scale = Vector2(0.283667, 0.525333)
 texture = ExtResource("8_jlsp6")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(265, -165)
+scale = Vector2(2, 2)
+amount = 200
+process_material = SubResource("ParticleProcessMaterial_bug8p")
+texture = ExtResource("8_0ese5")
+lifetime = 8.0
+trail_lifetime = 0.01
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
