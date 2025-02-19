@@ -20,7 +20,6 @@ following the tutorial in the documentation."
 config/tags=PackedStringArray("2d", "demo", "official")
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3")
-config/icon="res://icon.webp"
 
 [display]
 

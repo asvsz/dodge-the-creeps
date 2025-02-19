@@ -4,12 +4,12 @@ extends Node
 var score = 0  
 
 @onready var best_score_label = $HUD/BestScoreLabel
-@onready var particles = $GPUParticles2D  
+@onready var particles = $Cristais  
 @onready var score_timer = $ScoreTimer  
 @onready var mob_timer = $MobTimer  
 @onready var hud = $HUD  
 
-@export var score_threshold = 10
+@export var score_threshold = 5
 @export var particle_duration = 3
 
 var particles_active = false  # Controla se as partículas estão ativas
@@ -55,7 +55,7 @@ func _deactivate_particles():
 	
 	# Criar um pequeno tempo de espera antes de permitir nova ativação
 	var cooldown_timer = Timer.new()
-	cooldown_timer.wait_time = 2.0  # Define um tempo de cooldown
+	cooldown_timer.wait_time = 10.0  # Define um tempo de cooldown
 	cooldown_timer.one_shot = true
 	cooldown_timer.timeout.connect(func():
 		particles_cooldown = false  # Libera para ativação futura

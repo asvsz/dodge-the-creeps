@@ -55,12 +55,12 @@ stream = ExtResource("5_55d8h")
 [node name="DeathSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_hp1r0")
 
-[node name="BG2" type="Sprite2D" parent="."]
+[node name="BG" type="Sprite2D" parent="."]
 position = Vector2(253, 367)
 scale = Vector2(0.283667, 0.525333)
 texture = ExtResource("8_jlsp6")
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+[node name="Cristais" type="GPUParticles2D" parent="."]
 position = Vector2(265, -165)
 scale = Vector2(2, 2)
 amount = 200
