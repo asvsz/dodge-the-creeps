@@ -1,5 +1,11 @@
-GPUParticles2D
+AnimatedSprite2D
+RigidBody2D
+Area2D
+Node2D
+CharacterBody2D
+CollisionShape2D
 Sprite2D
+GPUParticles2D
 ParallaxLayer
 ParallaxBackground
 Label

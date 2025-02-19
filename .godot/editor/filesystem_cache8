@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739987824
+::res://::1740004462
 hud.gd::GDScript::-1::1739979366::0::1::::<>CanvasLayer<>::
-hud.tscn::PackedScene::4947129736321201862::1739987338::0::1::::<><>::res://hud.gd<>uid://cit6gwe5px1q8::::res://fonts/Xolonium-Regular.ttf<>uid://cn45obokl0tex::::res://utils/hud_heartFull.png
-main.gd::GDScript::-1::1739987338::0::1::::<>Node<>::
-main.tscn::PackedScene::6469066510429512572::1739987338::0::1::::<><>::res://main.gd<>uid://rkdnhqgf2hpj::::res://mob.tscn<>uid://4vwrqjegqwpj::::res://player.tscn<>uid://ccqoreueuxdb7::::res://hud.tscn<>uid://q2pf4fr8d0ks::::res://art/House In a Forest Loop.ogg<>uid://dw26fpygeag8o::::res://art/gameover.wav<>uid://b3krlclni12fx::::res://efeitos/Crystal_02.png<>uid://co6tsfrgycmet::::res://backgrounds/Starbasesnow.png
+hud.tscn::PackedScene::4947129736321201862::1740002890::0::1::::<><>::res://hud.gd<>uid://cit6gwe5px1q8::::res://fonts/Xolonium-Regular.ttf<>uid://cn45obokl0tex::::res://utils/hud_heartFull.png
+main.gd::GDScript::-1::1739988235::0::1::::<>Node<>::
+main.tscn::PackedScene::6469066510429512572::1740002890::0::1::::<><>::res://main.gd<>uid://rkdnhqgf2hpj::::res://mob.tscn<>uid://4vwrqjegqwpj::::res://player.tscn<>uid://ccqoreueuxdb7::::res://hud.tscn<>uid://q2pf4fr8d0ks::::res://art/House In a Forest Loop.ogg<>uid://dw26fpygeag8o::::res://art/gameover.wav<>uid://b3krlclni12fx::::res://efeitos/Crystal_02.png<>uid://co6tsfrgycmet::::res://backgrounds/Starbasesnow.png
 mob.gd::GDScript::-1::1739970354::0::1::::<>RigidBody2D<>::
-mob.tscn::PackedScene::1214059878346897035::1739987338::0::1::::<><>::res://mob.gd<>uid://ddtyprqdu25gs::::res://meteoros/Meteor_10.png<>uid://b50hniywbngas::::res://meteoros/Meteor_09.png<>uid://cfc6jtfb2blv4::::res://meteoros/Meteor_02.png<>uid://b3fklivs7dh56::::res://meteoros/Meteor_04.png<>uid://cabni7rycei0n::::res://meteoros/Meteor_07.png<>uid://c0g7ubgiq30v7::::res://meteoros/Meteor_01.png<>uid://da5xbxju8sw5r::::res://meteoros/Meteor_05.png<>uid://c1i71t3w3c13::::res://meteoros/Meteor_08.png<>uid://5fpk2s2hkavp::::res://meteoros/Meteor_06.png
+mob.tscn::PackedScene::1214059878346897035::1740002890::0::1::::<><>::res://mob.gd<>uid://ddtyprqdu25gs::::res://meteoros/Meteor_10.png<>uid://b50hniywbngas::::res://meteoros/Meteor_09.png<>uid://cfc6jtfb2blv4::::res://meteoros/Meteor_02.png<>uid://b3fklivs7dh56::::res://meteoros/Meteor_04.png<>uid://cabni7rycei0n::::res://meteoros/Meteor_07.png<>uid://c0g7ubgiq30v7::::res://meteoros/Meteor_01.png<>uid://da5xbxju8sw5r::::res://meteoros/Meteor_05.png<>uid://c1i71t3w3c13::::res://meteoros/Meteor_08.png<>uid://5fpk2s2hkavp::::res://meteoros/Meteor_06.png
 player.gd::GDScript::-1::1739979366::0::1::::<>Area2D<>::
 player.tscn::PackedScene::2080195385142696447::1739979109::0::1::::<><>::res://player.gd<>uid://dcl4cb7mqp86s::::res://nave/spaceRockets_001.png
 README.md::TextFile::-1::1739970354::0::1::::<><>::
