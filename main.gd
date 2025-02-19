@@ -2,6 +2,8 @@ extends Node
 
 @export var mob_scene: PackedScene
 var score
+@onready var best_score_label = get_node("/root/Main/HUD/BestScoreLabel")
+
 
 func game_over():
 	$ScoreTimer.stop()
@@ -18,6 +20,7 @@ func new_game():
 	$StartTimer.start()
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
+	best_score_label.hide()
 	$Music.play()
 
 
