@@ -2,11 +2,21 @@ extends Area2D
 
 signal hit
 
-@export var speed = 400 # How fast the player will move (pixels/sec).
-var screen_size # Size of the game window.
+@export var max_lives = 3
+var lives
+@export var speed = 400
+var screen_size
+@onready var hud = get_node("/root/Main/HUD")
+@onready var livesLabel = get_node("/root/Main/HUD/LivesLabel")
+@onready var livesIcon = get_node("/root/Main/HUD/LivesIcon")
+
+
 
 func _ready():
 	screen_size = get_viewport_rect().size
+	lives = max_lives
+	livesLabel.hide()
+	livesIcon.hide()
 	hide()
 
 
@@ -43,12 +53,19 @@ func _process(delta):
 func start(pos):
 	position = pos
 	rotation = 0
+	hud.update_lives(lives)
 	show()
 	$CollisionShape2D.disabled = false
 
 
 func _on_body_entered(_body):
-	hide() # Player disappears after being hit.
-	hit.emit()
-	# Must be deferred as we can't change physics properties on a physics callback.
-	$CollisionShape2D.set_deferred(&"disabled", true)
+	lives -= 1
+	hud.update_lives(lives)
+	if lives <= 0:
+		hide()
+		lives = max_lives
+		hit.emit()
+		$CollisionShape2D.set_deferred(&"disabled", true)
+	else:
+		start(Vector2(screen_size.x / 2, screen_size.y / 2))
+		
